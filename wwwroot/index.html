@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>EPLAN SignalR Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .messages {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            min-height: 200px;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        .message {
+            padding: 5px;
+            margin: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .connection-status {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .connected {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .disconnected {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <h2>EPLAN SignalR Test</h2>
+    <div id="connectionStatus" class="connection-status">Connecting...</div>
+    <div id="messages" class="messages"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
